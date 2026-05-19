@@ -2,7 +2,7 @@ import logging
 
 import requests
 
-from unmanic.libs.unplugins.settings import Settings as PluginSettings
+from unmanic.libs.unplugins.settings import PluginSettings
 
 logger = logging.getLogger(__name__)
 
@@ -15,19 +15,12 @@ class Settings(PluginSettings):
 
     form_settings = {
         "webhook_url": {
-            "label": "Webhook URL",
+            "label": "Webhook URL (e.g. http://host:8080/api/webhooks/custom)",
             "input_type": "text",
-            "description": (
-                "Full URL of the Media Preview Generator custom webhook endpoint. "
-                "Example: http://192.168.1.100:8080/api/webhooks/custom"
-            ),
         },
         "webhook_secret": {
-            "label": "Webhook Secret",
+            "label": "Webhook Secret (sent as X-Auth-Token header; leave blank if not required)",
             "input_type": "text",
-            "description": (
-                "API token sent as the X-Auth-Token header. Leave blank if authentication is not required."
-            ),
         },
     }
 
