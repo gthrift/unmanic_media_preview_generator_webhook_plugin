@@ -2,7 +2,7 @@ import logging
 
 import requests
 
-from unmanic.libs.unplugged.settings import Settings as PluginSettings
+from unmanic.libs.unplugins.settings import Settings as PluginSettings
 
 logger = logging.getLogger(__name__)
 
