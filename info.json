@@ -1,0 +1,13 @@
+{
+    "id": "media_preview_generator_webhook",
+    "name": "Media Preview Generator Webhook",
+    "author": "gthrift",
+    "version": "0.0.1",
+    "description": "Sends a webhook to a Media Preview Generator instance after a file has been successfully processed, triggering it to scan and generate previews for the output file.",
+    "compatibility": [2],
+    "platform": ["all"],
+    "tags": "webhook,notification,media-preview",
+    "priorities": {
+        "on_postprocessor_task_results": 0
+    }
+}
