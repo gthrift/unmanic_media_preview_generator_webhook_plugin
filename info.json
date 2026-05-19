@@ -7,6 +7,7 @@
     "compatibility": [2],
     "platform": ["all"],
     "tags": "webhook,notification,media-preview",
+    "icon": "https://raw.githubusercontent.com/Unmanic/unmanic-plugins/official/source/notify_via_webhook/icon.png",
     "priorities": {
         "on_postprocessor_task_results": 0
     }
